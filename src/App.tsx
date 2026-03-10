@@ -62,10 +62,10 @@ const base: React.CSSProperties = {
 function SLabel({ text, accent }: { text: string; accent: string }) {
 	return (
 		<div style={{ marginBottom: 16, flexShrink: 0 }}>
-			<div style={{ ...mn, fontSize: 10, letterSpacing: '0.24em', textTransform: 'uppercase', color: accent, marginBottom: 9 }}>
+			<div style={{ ...mn, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#000', marginBottom: 9, padding: '5px 9px', background: `${accent}66`, border: '1px solid rgba(0,0,0,0.4)', display: 'inline-block' }}>
 				{text}
 			</div>
-			<div style={{ height: 1, width: 36, background: accent }} />
+			<div style={{ height: 3, width: 42, background: accent, border: '1px solid rgba(0,0,0,0.35)' }} />
 		</div>
 	);
 }
@@ -886,7 +886,7 @@ const Presentation = () => {
 			</div>
 
 			{/* Slide viewport */}
-			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.02)', transformOrigin: 'center' }}>
+			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.02)', transformOrigin: 'center', background: '#fff', border: `3px solid ${accent}88`, boxShadow: `0 0 0 7px ${accent}26` }}>
 				<AnimatePresence initial={false} custom={direction} mode="wait">
 					<motion.div
 						key={currentSlide}
@@ -901,6 +901,7 @@ const Presentation = () => {
 							scale: { duration: 0.22 },
 						}}
 						className="w-full h-full"
+						style={{ filter: 'saturate(1.18)' }}
 					>
 						{slides[currentSlide].content}
 					</motion.div>
