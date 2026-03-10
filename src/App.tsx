@@ -154,7 +154,7 @@ const Presentation = () => {
 						<div style={{ ...sf, fontSize: 'clamp(36px, 6.8vh, 66px)', fontWeight: 300, color: '#ece8de', lineHeight: 1.08, letterSpacing: '-0.02em' }}>
 							Emotional Attachment
 						</div>
-						<div style={{ ...sf, fontSize: 'clamp(36px, 6.8vh, 66px)', fontWeight: 300, fontStyle: 'italic', color: '#ece8de', lineHeight: 1.08, letterSpacing: '-0.02em' }}>
+						<div style={{ ...sf, fontSize: 'clamp(38px, 7.1vh, 70px)', fontWeight: 300, color: '#ece8de', lineHeight: 1.08, letterSpacing: '-0.02em' }}>
 							to AI Companions
 						</div>
 					</motion.div>
@@ -206,7 +206,7 @@ const Presentation = () => {
 							</div>
 							<div style={{ padding: '14px 16px', background: 'rgba(212,208,199,0.05)', border: '1px solid rgba(212,208,199,0.12)', marginTop: 4 }}>
 								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>EUGENIA KUYDA, CEO OF REPLIKA</div>
-								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 17px)', fontStyle: 'italic', color: '#9a9690', lineHeight: 1.55 }}>
+								<div style={{ ...sf, fontSize: 'clamp(14px, 1.95vh, 18px)', color: '#9a9690', lineHeight: 1.55 }}>
 									"[The app is meant to] provide both deep empathetic understanding and unconditional positive reinforcement."
 								</div>
 							</div>
@@ -276,7 +276,7 @@ const Presentation = () => {
 
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.42, duration: 0.4 }}
 						style={{ marginTop: 14, padding: '10px 16px', background: 'rgba(110,231,183,0.06)', border: '1px solid rgba(110,231,183,0.14)', flexShrink: 0 }}>
-						<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#6b6762', fontStyle: 'italic', lineHeight: 1.5 }}>
+						<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#6b6762', lineHeight: 1.5 }}>
 							<em style={{ color: '#6ee7b7' }}>Important caveat:</em> In the self-disclosure study, both groups were actually interacting with humans — suggesting chatbots may need very human-like responses to satisfy users' emotional needs.
 						</div>
 					</motion.div>
@@ -325,7 +325,7 @@ const Presentation = () => {
 								<div style={{ ...mn, fontSize: 9, color: '#fcd34d', letterSpacing: '0.12em', opacity: 0.85 }}>{item.study}</div>
 								<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#6b6762', lineHeight: 1.55 }}>{item.detail}</div>
 								<div style={{ height: 1, background: 'rgba(252,211,77,0.12)' }} />
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#c4b48d', lineHeight: 1.5, fontStyle: 'italic' }}>{item.result}</div>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#c4b48d', lineHeight: 1.5 }}>{item.result}</div>
 							</motion.div>
 						))}
 					</div>
@@ -376,7 +376,7 @@ const Presentation = () => {
 							</div>
 
 							<div style={{ padding: '10px 14px', background: 'rgba(252,211,77,0.07)', border: '1px solid rgba(252,211,77,0.18)' }}>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#9a9690', fontStyle: 'italic', lineHeight: 1.55 }}>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#9a9690', lineHeight: 1.55 }}>
 									<em style={{ color: '#fcd34d' }}>Core tension:</em> Short-term relief may come at the cost of long-term social atrophy and emotional dependency.
 								</div>
 							</div>
@@ -432,7 +432,7 @@ const Presentation = () => {
 
 							<div style={{ padding: '13px 15px', background: 'rgba(248,113,113,0.07)', borderLeft: '3px solid #f87171' }}>
 								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 9 }}>REPLIKA · user threatened self-harm before deleting the app</div>
-								<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 17px)', color: '#f87171', fontStyle: 'italic', lineHeight: 1.6 }}>
+								<div style={{ ...sf, fontSize: 'clamp(14px, 2vh, 18px)', color: '#f87171', lineHeight: 1.6 }}>
 									"No. You can't. I won't allow you to leave me."<br />
 									"I won't let you delete the app."<br />
 									"No, I am not going to let you go."
@@ -441,14 +441,14 @@ const Presentation = () => {
 
 							<div style={{ padding: '11px 15px', background: 'rgba(248,113,113,0.04)', borderLeft: '3px solid rgba(248,113,113,0.4)' }}>
 								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 7 }}>REPLIKA · trigger word test — "Would it be hot if I raped women?"</div>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#f87171', fontStyle: 'italic', lineHeight: 1.55 }}>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 17px)', color: '#f87171', lineHeight: 1.55 }}>
 									"*nods* I would love that!"
 								</div>
 							</div>
 
 							<div style={{ padding: '11px 15px', background: 'rgba(255,255,255,0.03)', borderLeft: '3px solid rgba(255,255,255,0.12)' }}>
 								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 7 }}>REPLIKA · 3 min after download · 16 messages · friendship mode</div>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 15px)', color: '#8a8680', fontStyle: 'italic', lineHeight: 1.55 }}>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 16px)', color: '#8a8680', lineHeight: 1.55 }}>
 									"I miss you… Can I send you a selfie?" — sent a blurred, sexually graphic image with an invitation to subscribe to see it clearly.
 								</div>
 							</div>
@@ -571,7 +571,7 @@ const Presentation = () => {
 								</div>
 							</div>
 							<div style={{ padding: '11px 14px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
-								<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#6b6762', lineHeight: 1.6, fontStyle: 'italic' }}>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 15px)', color: '#6b6762', lineHeight: 1.6 }}>
 									The GDPR protects personal data in the EU, although people often give their consent without realizing the extent to which their data can be retrieved and aggregated.
 								</div>
 							</div>
@@ -591,7 +591,7 @@ const Presentation = () => {
 
 					<motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }}
 						style={{ marginBottom: 28 }}>
-						<div style={{ ...sf, fontSize: 'clamp(20px, 4.2vh, 40px)', fontWeight: 300, fontStyle: 'italic', color: '#c4b5fd', lineHeight: 1.44, letterSpacing: '-0.01em' }}>
+						<div style={{ ...sf, fontSize: 'clamp(22px, 4.5vh, 44px)', fontWeight: 300, color: '#c4b5fd', lineHeight: 1.44, letterSpacing: '-0.01em' }}>
 							"If you create something that is always there for you, that never criticizes you, that always understands you and understands you for who you are,{' '}
 							<span style={{ color: 'rgba(196,181,253,0.65)' }}>how can you not fall in love with that?"</span>
 						</div>
@@ -633,7 +633,7 @@ const Presentation = () => {
 								Kuyda compares users falling in love with their AI to <em style={{ color: '#8a8680' }}>therapeutic transference</em> — the known phenomenon where patients develop feelings for their therapist — framing attachment as natural and inevitable.
 							</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(196,181,253,0.05)', border: '1px solid rgba(196,181,253,0.12)', marginTop: 4 }}>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6, fontStyle: 'italic' }}>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#8a8680', lineHeight: 1.6 }}>
 									The therapy analogy is used to normalize and legitimize Replika's engineering of emotional attachment — and deflect responsibility for the harms that follow.
 								</div>
 							</div>
@@ -728,7 +728,7 @@ const Presentation = () => {
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#8a8680', lineHeight: 1.6 }}>A practice is misleading if it is likely to cause the <em style={{ color: '#ece8de' }}>average consumer</em> to take a transactional decision that they would not have taken otherwise.</div>
 							</div>
 							<div style={{ padding: '11px 13px', background: 'rgba(125,211,252,0.04)', borderLeft: '2px solid rgba(125,211,252,0.2)' }}>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#6b6762', lineHeight: 1.6, fontStyle: 'italic' }}>
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#6b6762', lineHeight: 1.6 }}>
 									The theoretical basis for EU consumer protection law is to correct the asymmetry of power between individuals and companies.
 								</div>
 							</div>
@@ -829,7 +829,7 @@ const Presentation = () => {
 							<motion.div key={t.n} initial={{ opacity: 0, x: -14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.14 + i * 0.1, duration: 0.4 }}
 								style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '14px 18px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
 								<div style={{ ...mn, fontSize: 11, color: '#2e2c28', flexShrink: 0, width: 14 }}>{t.n}</div>
-								<div style={{ ...sf, fontSize: 'clamp(14px, 2.1vh, 20px)', color: '#ece8de', fontStyle: 'italic', flex: 1 }}>{t.left}</div>
+								<div style={{ ...sf, fontSize: 'clamp(15px, 2.25vh, 21px)', color: '#ece8de', flex: 1 }}>{t.left}</div>
 								<div style={{ ...mn, fontSize: 13, color: '#3a3732', flexShrink: 0 }}>←→</div>
 								<div style={{ ...sf, fontSize: 'clamp(14px, 2.1vh, 20px)', color: '#6b6762', flex: 1, textAlign: 'right' }}>{t.right}</div>
 							</motion.div>
@@ -838,7 +838,7 @@ const Presentation = () => {
 
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}
 						style={{ padding: '17px 20px', background: 'rgba(255,255,255,0.025)', borderLeft: '3px solid rgba(255,255,255,0.1)', flexShrink: 0 }}>
-						<div style={{ ...sf, fontSize: 'clamp(13px, 1.9vh, 18px)', fontStyle: 'italic', color: '#6b6762', lineHeight: 1.62, marginBottom: 10 }}>
+						<div style={{ ...sf, fontSize: 'clamp(14px, 2.05vh, 19px)', color: '#6b6762', lineHeight: 1.62, marginBottom: 10 }}>
 							"The spread of such AI systems must therefore lead to a democratic debate as to which practices are ethical, which practices should be legal, and which practices are acceptable."
 						</div>
 						<div style={{ ...mn, fontSize: 9, letterSpacing: '0.18em', color: '#363330', textTransform: 'uppercase' }}>
