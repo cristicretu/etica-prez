@@ -4,9 +4,9 @@
   font-family: 'Cormorant Garamond', Georgia, serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: dark;
-  background-color: #0b0a0e;
-  color: #ece8de;
+  color-scheme: light;
+  background-color: #f7f4ee;
+  color: #1f1d1a;
 }
 
 body {
@@ -18,6 +18,10 @@ body {
 #root {
   width: 100%;
   height: 100vh;
+}
+
+#root, #root * {
+  color: #000000 !important;
 }
 
 /* Custom scrollbar for content if needed */
