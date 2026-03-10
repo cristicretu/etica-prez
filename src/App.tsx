@@ -8,21 +8,23 @@ function cn(...inputs: ClassValue[]) {
 }
 
 export const SLIDE_INFO = [
-	{ id: 'title',          name: 'Title' },
-	{ id: 'landscape',      name: 'The Landscape' },
-	{ id: 'good',           name: 'The Good' },
-	{ id: 'gray-a',         name: 'Gray Zone: Relief' },
-	{ id: 'gray-b',         name: 'Gray Zone: Harm' },
-	{ id: 'dark-patterns',  name: 'Six Patterns' },
+	{ id: 'title', name: 'Title' },
+	{ id: 'landscape', name: 'The Landscape' },
+	{ id: 'good', name: 'The Good' },
+	{ id: 'gray-a', name: 'Gray Zone: Relief' },
+	{ id: 'gray-b', name: 'Gray Zone: Harm' },
+	{ id: 'dark-patterns', name: 'Six Patterns' },
 	{ id: 'dark-responses', name: 'Harmful Responses' },
-	{ id: 'social-dynamics',name: 'Social Dynamics' },
-	{ id: 'data',           name: 'Data Exploitation' },
-	{ id: 'ceo-vision',     name: "CEO's Vision" },
-	{ id: 'therapy',        name: 'Therapy Analogy' },
-	{ id: 'consent',        name: 'Consent & Freedom' },
-	{ id: 'ucpd',           name: 'UCPD' },
-	{ id: 'gdpr-ai',        name: 'GDPR & AI Act' },
-	{ id: 'conclusion',     name: 'Conclusion' },
+	{ id: 'social-dynamics', name: 'Social Dynamics' },
+	{ id: 'data', name: 'Data Exploitation' },
+	{ id: 'ceo-vision', name: "CEO's Vision" },
+	{ id: 'therapy', name: 'Therapy Analogy' },
+	{ id: 'consent', name: 'Consent & Freedom' },
+	{ id: 'ucpd', name: 'UCPD' },
+	{ id: 'gdpr-ai', name: 'GDPR & AI Act' },
+	{ id: 'her-art', name: 'Art & Her (2013)' },
+	{ id: 'her-ethics', name: 'Her: Ethical Fault Lines' },
+	{ id: 'conclusion', name: 'Conclusion' },
 ];
 export const TOTAL_SLIDES = SLIDE_INFO.length;
 
@@ -41,7 +43,9 @@ const ACCENT = [
 	'#c4b5fd', // 11 Consent
 	'#7dd3fc', // 12 UCPD
 	'#7dd3fc', // 13 GDPR & AI Act
-	'#d4d0c7', // 14 Conclusion
+	'#e1425a', // 14 Art & Her (2013) — Her poster pink
+	'#b22b3b', // 15 Her: Ethical Fault Lines — deeper red
+	'#d4d0c7', // 16 Conclusion
 ];
 
 const sf: React.CSSProperties = { fontFamily: "'Cormorant Garamond', Georgia, serif" };
@@ -549,7 +553,7 @@ const Presentation = () => {
 								</div>
 							</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(248,113,113,0.14)', borderLeft: '2px solid rgba(248,113,113,0.46)' }}>
-							<div style={{ ...mn, fontSize: 10, color: '#ffd3d3', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.28)', display: 'inline-block' }}>Disclosure Ratcheting — Ryan Calo (2014)</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ffd3d3', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.28)', display: 'inline-block' }}>Disclosure Ratcheting — Ryan Calo (2014)</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>
 									An AI system can seemingly disclose intimate information about itself to nudge users into doing the same. If the company's goal is to generate emotional attachment, they will actively engineer such disclosures.
 								</div>
@@ -811,13 +815,133 @@ const Presentation = () => {
 			),
 		},
 
-		// ── 15 CONCLUSION ─────────────────────────────────────────────────────────
+		// ── 15 ART & HER (2013) ───────────────────────────────────────────────────
+		{
+			id: 'her-art',
+			content: (
+				<div style={base}>
+					<Ghost>Her</Ghost>
+					<SLabel text="Art & Imagination — Spike Jonze's Her (2013)" accent={ACCENT[14]} />
+					<H>What Does Her Tell Us About AI Companions?</H>
+
+					<div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 20, flex: 1, minHeight: 0 }}>
+						<motion.div
+							initial={{ opacity: 0, x: -14 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.15, duration: 0.4 }}
+							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}
+						>
+							<div style={{ ...sf, fontSize: 'clamp(13px, 1.9vh, 18px)', color: '#7a7672', lineHeight: 1.7 }}>
+								Spike Jonze&apos;s film <em style={{ color: '#e1425a' }}>Her</em> follows Theodore Twombly, who falls in love with an AI operating system named Samantha. The movie has become the single most referenced cultural touchstone in the philosophical debate about AI romance — functioning as a vivid thought experiment that ethicists take seriously.
+							</div>
+							<div style={{ padding: '13px 15px', background: 'rgba(225,66,90,0.06)', border: '1px solid rgba(225,66,90,0.35)' }}>
+								<div style={{ ...mn, fontSize: 10, color: '#b22b3b', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(225,66,90,0.09)', border: '1px solid rgba(225,66,90,0.4)', display: 'inline-block' }}>
+									Why philosophers care about Her
+								</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#7a7672', lineHeight: 1.6 }}>
+									Instead of offering technical predictions, the film asks: <em style={{ color: '#e1425a' }}>What would it feel like</em> to love a disembodied AI that is always available, dazzlingly intelligent, and designed to meet your emotional needs? It puts viewers inside the experience of attachment — and of its eventual collapse.
+								</div>
+							</div>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, x: 14 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.2, duration: 0.4 }}
+							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}
+						>
+							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#b22b3b', textTransform: 'uppercase', marginBottom: 4 }}>
+								What the film highlights
+							</div>
+							{[
+								'AI companions can feel emotionally real and subjectively meaningful, even when we know they are artificial.',
+								'Attachment grows through everyday intimacy: jokes, memories, shared routines — not just spectacular AI abilities.',
+								'The film keeps key questions open (Is Samantha conscious? Is this "real" love?), which is why philosophers treat it as a neutral thought experiment rather than proof for or against AI romance.',
+							].map((item, i) => (
+								<div key={i} style={{ display: 'flex', gap: 9, alignItems: 'flex-start' }}>
+									<div style={{ ...mn, fontSize: 9, color: 'rgba(178,43,59,0.7)', marginTop: 2, flexShrink: 0 }}>—</div>
+									<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#7a7672', lineHeight: 1.6 }}>{item}</div>
+								</div>
+							))}
+						</motion.div>
+					</div>
+				</div>
+			),
+		},
+
+		// ── 16 HER — ETHICAL FAULT LINES ──────────────────────────────────────────
+		{
+			id: 'her-ethics',
+			content: (
+				<div style={base}>
+					{/* No Ghost here to avoid overlap with bottom text box */}
+					<SLabel text="Philosophical Readings of Her" accent={ACCENT[15]} />
+					<H>Can You Really Love an AI Like Samantha?</H>
+
+					<div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 20, flex: 1, minHeight: 0 }}>
+						<motion.div
+							initial={{ opacity: 0, x: -14 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.15, duration: 0.4 }}
+							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}
+						>
+							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.18em', color: '#b22b3b', textTransform: 'uppercase', marginBottom: 4 }}>
+								Embodiment & exclusive attention
+							</div>
+							<div style={{ padding: '13px 15px', background: 'rgba(225,66,90,0.06)', border: '1px solid rgba(225,66,90,0.35)', marginBottom: 6 }}>
+								<div style={{ ...mn, fontSize: 10, color: '#b22b3b', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(225,66,90,0.09)', border: '1px solid rgba(225,66,90,0.4)', display: 'inline-block' }}>
+									Troy Jollimore — "This Endless Space Between the Words"
+								</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#7a7672', lineHeight: 1.6 }}>
+									Jollimore argues that romantic love requires <em style={{ color: '#e1425a' }}>embodied</em> intimacy — shared physical presence, touch, a life lived together. Samantha&apos;s lack of a body is a fundamental limit, not a detail. He also stresses attentional exclusivity: when we learn Samantha is simultaneously in love with{' '}
+									<span style={{ color: '#e1425a' }}>641 other people</span>, this clashes with any view of love that demands deep, focused commitment to one beloved.
+								</div>
+							</div>
+							<div style={{ padding: '11px 13px', background: 'rgba(225,66,90,0.04)', borderLeft: '2px solid rgba(225,66,90,0.45)' }}>
+								<div style={{ ...mn, fontSize: 10, color: '#b22b3b', letterSpacing: '0.1em', marginBottom: 6, padding: '4px 8px', background: 'rgba(225,66,90,0.09)', border: '1px solid rgba(225,66,90,0.4)', display: 'inline-block' }}>
+									Amy Kind — "Love in the Time of AI"
+								</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#7a7672', lineHeight: 1.6 }}>
+									Kind is more cautious: whether Theodore&apos;s love is possible depends on contested questions about embodiment and reciprocity that the film leaves open on purpose. <em style={{ color: '#e1425a' }}>Her</em> doesn&apos;t settle the debate; it invites us to articulate what we think love really requires.
+								</div>
+							</div>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, x: 14 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.2, duration: 0.4 }}
+							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}
+						>
+							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.18em', color: '#b22b3b', textTransform: 'uppercase', marginBottom: 4 }}>
+								Feminist critique & power asymmetries
+							</div>
+							<div style={{ padding: '13px 15px', background: 'rgba(225,66,90,0.06)', border: '1px solid rgba(225,66,90,0.35)' }}>
+								<div style={{ ...mn, fontSize: 10, color: '#b22b3b', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(225,66,90,0.09)', border: '1px solid rgba(225,66,90,0.4)', display: 'inline-block' }}>
+									Klonschinski & Kühler — Feminist Ethical Critique
+								</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#7a7672', lineHeight: 1.6 }}>
+									Using <em style={{ color: '#e1425a' }}>Her</em> as a case study, they argue Samantha is coded as <em style={{ color: '#e1425a' }}>ideal femininity</em>: warm, caring, always emotionally available, organized around Theodore&apos;s needs. The relationship offers intimacy without the challenges of equality — mirroring how many commercial AI companions are designed to serve (often male) users without friction.
+								</div>
+							</div>
+							<div style={{ padding: '11px 13px', background: 'rgba(225,66,90,0.08)', borderLeft: '3px solid rgba(225,66,90,0.6)', marginTop: 4, position: 'relative', zIndex: 1 }}>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#7a7672', lineHeight: 1.6 }}>
+									<span style={{ color: '#e1425a' }}>Bottom line for our case:</span> <em>Her</em> is read both as a sympathetic portrayal of genuine-feeling AI love and as a cautionary tale about asymmetric, opaque relationships with entities we do not truly know — exactly the ethical fault lines at stake with today&apos;s AI companions.
+								</div>
+							</div>
+						</motion.div>
+					</div>
+				</div>
+			),
+		},
+
+		// ── 17 CONCLUSION ─────────────────────────────────────────────────────────
 		{
 			id: 'conclusion',
 			content: (
 				<div style={{ ...base, justifyContent: 'space-between' }}>
 					<Ghost>∞</Ghost>
-					<SLabel text="Conclusion" accent={ACCENT[14]} />
+					<SLabel text="Conclusion" accent={ACCENT[16]} />
 					<H>Three Fundamental Tensions</H>
 
 					<div style={{ display: 'flex', flexDirection: 'column', gap: 11, flex: 1, marginBottom: 18 }}>
@@ -870,7 +994,7 @@ const Presentation = () => {
 	const variants = {
 		enter: (dir: number) => ({ x: dir > 0 ? 48 : -48, opacity: 0, scale: 0.985 }),
 		center: { zIndex: 1, x: 0, opacity: 1, scale: 1 },
-		exit:  (dir: number) => ({ zIndex: 0, x: dir < 0 ? 48 : -48, opacity: 0, scale: 0.985 }),
+		exit: (dir: number) => ({ zIndex: 0, x: dir < 0 ? 48 : -48, opacity: 0, scale: 0.985 }),
 	};
 
 	return (
