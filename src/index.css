@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light;
-  background-color: #fcfcfc;
-  color: #1a1a1a;
+  color-scheme: dark;
+  background-color: #0b0a0e;
+  color: #ece8de;
 }
 
 body {
