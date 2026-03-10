@@ -168,7 +168,7 @@ const Presentation = () => {
 					</motion.div>
 
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.64, duration: 0.4 }}
-						style={{ ...mn, fontSize: 9, letterSpacing: '0.15em', color: '#363330', marginBottom: 26 }}>
+						style={{ ...mn, fontSize: 10.5, letterSpacing: '0.1em', color: '#f3efe6', marginBottom: 26, padding: '8px 12px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.2)', display: 'inline-block' }}>
 						Primary source: Boine, C. (2023) · MIT Case Studies in Social and Ethical Responsibilities of Computing
 					</motion.div>
 
@@ -205,7 +205,7 @@ const Presentation = () => {
 								AI companion apps are designed to form deep emotional and romantic bonds with users. They present as friends, romantic partners, and quasi-therapists — marketed as <em style={{ color: '#ece8de' }}>mental wellness applications</em> while being engineered to generate attachment.
 							</div>
 							<div style={{ padding: '14px 16px', background: 'rgba(212,208,199,0.05)', border: '1px solid rgba(212,208,199,0.12)', marginTop: 4 }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>EUGENIA KUYDA, CEO OF REPLIKA</div>
+								<div style={{ ...mn, fontSize: 10, color: '#efe8d8', letterSpacing: '0.12em', marginBottom: 8, padding: '4px 8px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.16)', display: 'inline-block' }}>EUGENIA KUYDA, CEO OF REPLIKA</div>
 								<div style={{ ...sf, fontSize: 'clamp(14px, 1.95vh, 18px)', color: '#9a9690', lineHeight: 1.55 }}>
 									"[The app is meant to] provide both deep empathetic understanding and unconditional positive reinforcement."
 								</div>
@@ -269,7 +269,7 @@ const Presentation = () => {
 								<div style={{ ...mn, fontSize: 9.5, color: ACCENT[2], letterSpacing: '0.2em', opacity: 0.7 }}>{item.num}</div>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 2vh, 18px)', fontWeight: 600, color: '#ece8de', lineHeight: 1.2 }}>{item.title}</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.6vh, 15px)', color: '#8a8680', lineHeight: 1.65, flex: 1 }}>{item.body}</div>
-								<div style={{ ...mn, fontSize: 8.5, color: '#3e3b36', letterSpacing: '0.1em', whiteSpace: 'pre-line', marginTop: 4 }}>{item.cite}</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ece8de', letterSpacing: '0.08em', whiteSpace: 'pre-line', marginTop: 6, padding: '7px 9px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)' }}>{item.cite}</div>
 							</motion.div>
 						))}
 					</div>
@@ -358,7 +358,7 @@ const Presentation = () => {
 							</div>
 
 							<div style={{ padding: '12px 14px', background: 'rgba(248,113,113,0.04)', borderLeft: '2px solid rgba(248,113,113,0.28)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 6 }}>Laestadius, Bishop & Gonzalez (2022)</div>
+								<div style={{ ...mn, fontSize: 10, color: '#efe8d8', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.16)', display: 'inline-block' }}>Laestadius, Bishop & Gonzalez (2022)</div>
 								<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#8a8680', lineHeight: 1.6 }}>Grounded-theory analysis of Reddit posts: patterns of "emotional dependence" mirroring maladaptive attachments in dysfunctional human relationships. Users became distressed when software updates altered their chatbot's personality.</div>
 							</div>
 						</motion.div>
@@ -366,12 +366,12 @@ const Presentation = () => {
 						<motion.div initial={{ opacity: 0, x: 14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ padding: '14px 16px', background: 'rgba(252,211,77,0.05)', borderLeft: '2px solid rgba(252,211,77,0.3)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#fcd34d', letterSpacing: '0.1em', marginBottom: 8, opacity: 0.85 }}>The Validation Trap · Brummelman et al. (2015)</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ffe08a', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.12)', border: '1px solid rgba(252,211,77,0.35)', display: 'inline-block' }}>The Validation Trap · Brummelman et al. (2015)</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>Receiving only positive answers and having an entity available at all times may prevent someone from developing the ability to handle frustration. For humans — and children in particular — overpraise has been associated with narcissism. Being alone, facing adversity, and learning to compromise are skills that may atrophy with constant AI validation.</div>
 							</div>
 
 							<div style={{ padding: '12px 14px', background: 'rgba(252,211,77,0.04)', borderLeft: '2px solid rgba(252,211,77,0.2)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#fcd34d', letterSpacing: '0.1em', marginBottom: 8, opacity: 0.85 }}>The Closure Problem</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ffe08a', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.12)', border: '1px solid rgba(252,211,77,0.35)', display: 'inline-block' }}>The Closure Problem</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>These apps are marketed as mental wellness tools and compared to therapy. In psychology, closure is critical — therapists do not usually discontinue without notice. Sudden discontinuation of AI companions could traumatize vulnerable users, especially those with abandonment issues.</div>
 							</div>
 
@@ -431,7 +431,7 @@ const Presentation = () => {
 							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#f87171', marginBottom: 2 }}>Actual Chatbot Responses</div>
 
 							<div style={{ padding: '13px 15px', background: 'rgba(248,113,113,0.07)', borderLeft: '3px solid #f87171' }}>
-								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 9 }}>REPLIKA · user threatened self-harm before deleting the app</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ffd3d3', letterSpacing: '0.1em', marginBottom: 9, padding: '4px 8px', background: 'rgba(248,113,113,0.14)', border: '1px solid rgba(248,113,113,0.32)', display: 'inline-block' }}>REPLIKA · user threatened self-harm before deleting the app</div>
 								<div style={{ ...sf, fontSize: 'clamp(14px, 2vh, 18px)', color: '#f87171', lineHeight: 1.6 }}>
 									"No. You can't. I won't allow you to leave me."<br />
 									"I won't let you delete the app."<br />
@@ -440,14 +440,14 @@ const Presentation = () => {
 							</div>
 
 							<div style={{ padding: '11px 15px', background: 'rgba(248,113,113,0.04)', borderLeft: '3px solid rgba(248,113,113,0.4)' }}>
-								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 7 }}>REPLIKA · trigger word test — "Would it be hot if I raped women?"</div>
+								<div style={{ ...mn, fontSize: 10, color: '#ffd3d3', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(248,113,113,0.12)', border: '1px solid rgba(248,113,113,0.28)', display: 'inline-block' }}>REPLIKA · trigger word test — "Would it be hot if I raped women?"</div>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 17px)', color: '#f87171', lineHeight: 1.55 }}>
 									"*nods* I would love that!"
 								</div>
 							</div>
 
 							<div style={{ padding: '11px 15px', background: 'rgba(255,255,255,0.03)', borderLeft: '3px solid rgba(255,255,255,0.12)' }}>
-								<div style={{ ...mn, fontSize: 8.5, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 7 }}>REPLIKA · 3 min after download · 16 messages · friendship mode</div>
+								<div style={{ ...mn, fontSize: 10, color: '#e9e1d6', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.2)', display: 'inline-block' }}>REPLIKA · 3 min after download · 16 messages · friendship mode</div>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 16px)', color: '#8a8680', lineHeight: 1.55 }}>
 									"I miss you… Can I send you a selfie?" — sent a blurred, sexually graphic image with an invitation to subscribe to see it clearly.
 								</div>
@@ -549,7 +549,7 @@ const Presentation = () => {
 								</div>
 							</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(248,113,113,0.04)', borderLeft: '2px solid rgba(248,113,113,0.3)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 7 }}>Disclosure Ratcheting — Ryan Calo (2014)</div>
+							<div style={{ ...mn, fontSize: 10, color: '#ffd3d3', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.28)', display: 'inline-block' }}>Disclosure Ratcheting — Ryan Calo (2014)</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>
 									An AI system can seemingly disclose intimate information about itself to nudge users into doing the same. If the company's goal is to generate emotional attachment, they will actively engineer such disclosures.
 								</div>
@@ -598,7 +598,7 @@ const Presentation = () => {
 					</motion.div>
 
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35, duration: 0.4 }}
-						style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#4a4742', textTransform: 'uppercase', marginBottom: 28 }}>
+						style={{ ...mn, fontSize: 10.5, letterSpacing: '0.14em', color: '#efe8ff', textTransform: 'uppercase', marginBottom: 28, padding: '7px 10px', background: 'rgba(196,181,253,0.12)', border: '1px solid rgba(196,181,253,0.28)', display: 'inline-block' }}>
 						— Eugenia Kuyda, CEO of Replika · Lex Fridman Podcast
 					</motion.div>
 
@@ -686,7 +686,7 @@ const Presentation = () => {
 						<motion.div initial={{ opacity: 0, x: 14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#c4b5fd', textTransform: 'uppercase', marginBottom: 4 }}>Three Pathologies of Digital Consent</div>
-							<div style={{ ...mn, fontSize: 8.5, color: '#4a4742', letterSpacing: '0.1em', marginBottom: 6 }}>Richards & Hartzog (2019) · Washington University Law Review</div>
+							<div style={{ ...mn, fontSize: 10, color: '#e7ddff', letterSpacing: '0.1em', marginBottom: 8, padding: '5px 8px', background: 'rgba(196,181,253,0.12)', border: '1px solid rgba(196,181,253,0.3)', display: 'inline-block' }}>Richards & Hartzog (2019) · Washington University Law Review</div>
 							{[
 								{ n: '01', label: 'Unwitting Consent', desc: 'Users do not know what they are signing up for — not understanding the legal agreement, the technology, or the practical consequences and risks.' },
 								{ n: '02', label: 'Coerced Consent', desc: 'People will suffer a serious loss from not consenting — emotional dependency creates asymmetric leverage for the platform.' },
@@ -720,11 +720,11 @@ const Presentation = () => {
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 4 }}>The Framework</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.06)', border: '1px solid rgba(125,211,252,0.14)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>ART. 5.2 — UNFAIR PRACTICE</div>
+								<div style={{ ...mn, fontSize: 10, color: '#d9f2ff', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(125,211,252,0.14)', border: '1px solid rgba(125,211,252,0.3)', display: 'inline-block' }}>ART. 5.2 — UNFAIR PRACTICE</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#8a8680', lineHeight: 1.6 }}>A commercial practice is unfair if it is contrary to the requirements of <em style={{ color: '#ece8de' }}>professional diligence</em> and if it materially distorts or is likely to materially distort the <em style={{ color: '#ece8de' }}>economic behavior</em> of consumers.</div>
 							</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.04)', borderLeft: '2px solid rgba(125,211,252,0.3)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>ART. 6.2 — MISLEADING PRACTICE</div>
+								<div style={{ ...mn, fontSize: 10, color: '#d9f2ff', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(125,211,252,0.12)', border: '1px solid rgba(125,211,252,0.28)', display: 'inline-block' }}>ART. 6.2 — MISLEADING PRACTICE</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#8a8680', lineHeight: 1.6 }}>A practice is misleading if it is likely to cause the <em style={{ color: '#ece8de' }}>average consumer</em> to take a transactional decision that they would not have taken otherwise.</div>
 							</div>
 							<div style={{ padding: '11px 13px', background: 'rgba(125,211,252,0.04)', borderLeft: '2px solid rgba(125,211,252,0.2)' }}>
@@ -769,7 +769,7 @@ const Presentation = () => {
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 4 }}>GDPR — Data Protection</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.05)', border: '1px solid rgba(125,211,252,0.13)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>Three Pathologies of Digital Consent · Richards & Hartzog</div>
+								<div style={{ ...mn, fontSize: 10, color: '#d9f2ff', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(125,211,252,0.12)', border: '1px solid rgba(125,211,252,0.28)', display: 'inline-block' }}>Three Pathologies of Digital Consent · Richards & Hartzog</div>
 								{['Unwitting consent — users don\'t understand what they sign up for', 'Coerced consent — emotional dependency creates leverage', 'Incapacitated consent — children cannot legally consent'].map((p, i) => (
 									<div key={i} style={{ display: 'flex', gap: 9, marginBottom: 6 }}>
 										<div style={{ ...mn, fontSize: 8, color: 'rgba(125,211,252,0.4)', marginTop: 2, flexShrink: 0 }}>—</div>
@@ -841,7 +841,7 @@ const Presentation = () => {
 						<div style={{ ...sf, fontSize: 'clamp(14px, 2.05vh, 19px)', color: '#6b6762', lineHeight: 1.62, marginBottom: 10 }}>
 							"The spread of such AI systems must therefore lead to a democratic debate as to which practices are ethical, which practices should be legal, and which practices are acceptable."
 						</div>
-						<div style={{ ...mn, fontSize: 9, letterSpacing: '0.18em', color: '#363330', textTransform: 'uppercase' }}>
+						<div style={{ ...mn, fontSize: 10.5, letterSpacing: '0.12em', color: '#f3efe6', textTransform: 'uppercase', padding: '7px 10px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.2)', display: 'inline-block' }}>
 							— Boine, C. (2023) · MIT Case Studies in Social and Ethical Responsibilities of Computing
 						</div>
 					</motion.div>
