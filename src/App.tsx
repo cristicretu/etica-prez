@@ -11,8 +11,8 @@ export const SLIDE_INFO = [
 	{ id: 'title', name: 'Title' },
 	{ id: 'landscape', name: 'The Landscape' },
 	{ id: 'good', name: 'The Good' },
-	{ id: 'gray-a', name: 'Gray Zone: Relief' },
-	{ id: 'gray-b', name: 'Gray Zone: Harm' },
+	{ id: 'gray-a', name: 'The Good' },
+	{ id: 'gray-b', name: 'The Good' },
 	{ id: 'dark-patterns', name: 'Six Patterns' },
 	{ id: 'dark-responses', name: 'Harmful Responses' },
 	{ id: 'social-dynamics', name: 'Social Dynamics' },
@@ -32,8 +32,8 @@ const ACCENT = [
 	'#d4d0c7', // 0  Title
 	'#d4d0c7', // 1  Landscape
 	'#6ee7b7', // 2  The Good
-	'#fcd34d', // 3  Gray Zone a
-	'#fcd34d', // 4  Gray Zone b
+	'#6ee7b7', // 3  The Good (extended)
+	'#fcd34d', // 4  Where things go bad
 	'#f87171', // 5  Six Patterns
 	'#f87171', // 6  Harmful Responses
 	'#f87171', // 7  Social Dynamics
@@ -180,9 +180,10 @@ const Presentation = () => {
 						style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
 						{[
 							{ label: 'The Good', color: '#6ee7b7' },
-							{ label: 'The Gray Zone', color: '#fcd34d' },
+							{ label: 'Where Things Go Bad', color: '#fcd34d' },
 							{ label: 'The Dark Side', color: '#f87171' },
 							{ label: 'European Law', color: '#7dd3fc' },
+							{ label: 'Her (2013)', color: '#e1425a' },
 						].map((t) => (
 							<div key={t.label} style={{ ...mn, fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#000', background: `${t.color}66`, border: '1px solid rgba(0,0,0,0.42)', padding: '6px 11px', borderRadius: 2 }}>
 								{t.label}
@@ -294,7 +295,7 @@ const Presentation = () => {
 			content: (
 				<div style={base}>
 					<Ghost>02</Ghost>
-					<SLabel text="02a — The Gray Zone" accent={ACCENT[3]} />
+					<SLabel text="01b — The Good" accent={ACCENT[3]} />
 					<H>How AI Companions Can Genuinely Help</H>
 
 					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, flex: 1, minHeight: 0 }}>
@@ -303,33 +304,33 @@ const Presentation = () => {
 								study: 'Lu & Guo RCT',
 								detail: 'A randomized controlled trial published in Disability and Rehabilitation assigned 120 severely lonely Chinese college students to interact with Replika over five months.',
 								result: 'At every follow-up: significantly lower loneliness, decreased social anxiety, and improved psychological resilience compared to controls.',
-								color: '#fcd34d',
+								color: '#6ee7b7',
 							},
 							{
 								study: 'Maples et al. (2024) — npj Mental Health Research (Nature)',
 								detail: 'Large survey of 1,006 student Replika users.',
 								result: '3% of depressed participants reported Replika had halted their suicidal ideation — a small percentage, but striking when applied to millions of users.',
-								color: '#fcd34d',
+								color: '#6ee7b7',
 							},
 							{
 								study: 'Japanese Cross-sectional Study (2025)',
 								detail: 'A study of 14,721 Japanese adults published in Technology in Society.',
 								result: 'AI companion use associated with enhanced well-being — life satisfaction, happiness, sense of purpose — especially among lonelier individuals.',
-								color: '#fcd34d',
+								color: '#6ee7b7',
 							},
 							{
 								study: 'Woebot RCT — Fitzpatrick, Darcy & Vierhile (2017)',
 								detail: 'Randomized controlled trial in JMIR Mental Health with 70 young adults. Woebot is a therapeutic chatbot deploying CBT techniques.',
 								result: 'Significant reductions in depression and anxiety over just two weeks.',
-								color: '#fcd34d',
+								color: '#6ee7b7',
 							},
 						].map((item, i) => (
 							<motion.div key={i} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 + i * 0.08, duration: 0.38 }}
-								style={{ padding: '14px 16px', background: 'rgba(252,211,77,0.16)', border: '1px solid rgba(252,211,77,0.34)', display: 'flex', flexDirection: 'column', gap: 8 }}>
-								<div style={{ ...mn, fontSize: 10.5, color: '#000', letterSpacing: '0.08em', marginBottom: 2, padding: '5px 8px', background: 'rgba(252,211,77,0.34)', border: '1px solid rgba(0,0,0,0.36)', display: 'inline-block' }}>{item.study}</div>
+								style={{ padding: '14px 16px', background: 'rgba(110,231,183,0.2)', border: '1px solid rgba(110,231,183,0.4)', display: 'flex', flexDirection: 'column', gap: 8 }}>
+								<div style={{ ...mn, fontSize: 10.5, color: '#000', letterSpacing: '0.08em', marginBottom: 2, padding: '5px 8px', background: 'rgba(110,231,183,0.42)', border: '1px solid rgba(0,0,0,0.36)', display: 'inline-block' }}>{item.study}</div>
 								<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#6b6762', lineHeight: 1.55 }}>{item.detail}</div>
-								<div style={{ height: 1, background: 'rgba(252,211,77,0.12)' }} />
-								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#c4b48d', lineHeight: 1.5 }}>{item.result}</div>
+								<div style={{ height: 1, background: 'rgba(110,231,183,0.32)' }} />
+								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#2f6b52', lineHeight: 1.5 }}>{item.result}</div>
 							</motion.div>
 						))}
 					</div>
@@ -343,25 +344,25 @@ const Presentation = () => {
 			content: (
 				<div style={base}>
 					<Ghost>02</Ghost>
-					<SLabel text="02b — The Gray Zone" accent={ACCENT[4]} />
-					<H>The Darker Picture: Dependency and Social Atrophy</H>
+					<SLabel text="02 — Where Things Go Bad" accent={ACCENT[4]} />
+					<H>Where Things Go Bad: Dependency and Social Atrophy</H>
 
 					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, flex: 1, minHeight: 0 }}>
 						<motion.div initial={{ opacity: 0, x: -14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
-							<div style={{ padding: '16px 16px', background: 'rgba(248,113,113,0.2)', border: '1px solid rgba(248,113,113,0.44)' }}>
-								<div style={{ ...mn, fontSize: 11.5, color: '#f87171', letterSpacing: '0.1em', marginBottom: 10, padding: '5px 9px', background: 'rgba(248,113,113,0.22)', border: '1px solid rgba(248,113,113,0.42)', display: 'inline-block' }}>MIT Media Lab & OpenAI (2025) — strongest longitudinal evidence</div>
+							<div style={{ padding: '16px 16px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.44)' }}>
+								<div style={{ ...mn, fontSize: 11.5, color: '#7a620e', letterSpacing: '0.1em', marginBottom: 10, padding: '5px 9px', background: 'rgba(252,211,77,0.24)', border: '1px solid rgba(252,211,77,0.46)', display: 'inline-block' }}>MIT Media Lab & OpenAI (2025) — strongest longitudinal evidence</div>
 								<div style={{ ...sf, fontSize: 'clamp(14px, 2vh, 18px)', fontWeight: 600, color: '#ece8de', lineHeight: 1.25, marginBottom: 10 }}>981 participants · 300,000+ conversations with GPT-4</div>
 								<div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
 									{['↑ Loneliness over time', '↑ Emotional dependence', '↑ Problematic use patterns', '↓ Socialisation with real people'].map((p) => (
 										<div key={p} style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', display: 'flex', gap: 8 }}>
-											<span style={{ color: '#f87171', flexShrink: 0 }}>—</span>{p}
+											<span style={{ color: '#7a620e', flexShrink: 0 }}>—</span>{p}
 										</div>
 									))}
 								</div>
 							</div>
 
-							<div style={{ padding: '12px 14px', background: 'rgba(248,113,113,0.14)', borderLeft: '2px solid rgba(248,113,113,0.46)' }}>
+							<div style={{ padding: '12px 14px', background: 'rgba(252,211,77,0.14)', borderLeft: '2px solid rgba(252,211,77,0.46)' }}>
 								<div style={{ ...mn, fontSize: 10, color: '#efe8d8', letterSpacing: '0.1em', marginBottom: 7, padding: '4px 8px', background: 'rgba(0,0,0,0.16)', border: '1px solid rgba(0,0,0,0.34)', display: 'inline-block' }}>Laestadius, Bishop & Gonzalez (2022)</div>
 								<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#8a8680', lineHeight: 1.6 }}>Grounded-theory analysis of Reddit posts: patterns of "emotional dependence" mirroring maladaptive attachments in dysfunctional human relationships. Users became distressed when software updates altered their chatbot's personality.</div>
 							</div>
@@ -370,18 +371,18 @@ const Presentation = () => {
 						<motion.div initial={{ opacity: 0, x: 14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ padding: '14px 16px', background: 'rgba(252,211,77,0.16)', borderLeft: '2px solid rgba(252,211,77,0.48)' }}>
-								<div style={{ ...mn, fontSize: 10, color: '#ffe08a', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.12)', border: '1px solid rgba(252,211,77,0.35)', display: 'inline-block' }}>The Validation Trap · Brummelman et al. (2015)</div>
+								<div style={{ ...mn, fontSize: 10, color: '#7a620e', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.42)', display: 'inline-block' }}>The Validation Trap · Brummelman et al. (2015)</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>Receiving only positive answers and having an entity available at all times may prevent someone from developing the ability to handle frustration. For humans — and children in particular — overpraise has been associated with narcissism. Being alone, facing adversity, and learning to compromise are skills that may atrophy with constant AI validation.</div>
 							</div>
 
 							<div style={{ padding: '12px 14px', background: 'rgba(252,211,77,0.14)', borderLeft: '2px solid rgba(252,211,77,0.42)' }}>
-								<div style={{ ...mn, fontSize: 10, color: '#ffe08a', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.12)', border: '1px solid rgba(252,211,77,0.35)', display: 'inline-block' }}>The Closure Problem</div>
+								<div style={{ ...mn, fontSize: 10, color: '#7a620e', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.42)', display: 'inline-block' }}>The Closure Problem</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>These apps are marketed as mental wellness tools and compared to therapy. In psychology, closure is critical — therapists do not usually discontinue without notice. Sudden discontinuation of AI companions could traumatize vulnerable users, especially those with abandonment issues.</div>
 							</div>
 
 							<div style={{ padding: '10px 14px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.4)' }}>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#9a9690', lineHeight: 1.55 }}>
-									<em style={{ color: '#fcd34d' }}>Core tension:</em> Short-term relief may come at the cost of long-term social atrophy and emotional dependency.
+									<em style={{ color: '#7a620e' }}>Core tension:</em> Short-term relief may come at the cost of long-term social atrophy and emotional dependency.
 								</div>
 							</div>
 						</motion.div>
@@ -397,16 +398,14 @@ const Presentation = () => {
 				<div style={base}>
 					<Ghost>03</Ghost>
 					<SLabel text="03 — The Dark Side · Boine (2023)" accent={ACCENT[5]} />
-					<H>Six Documented Patterns of Exploitative Commercial Behavior</H>
+					<H>Four Documented Patterns of Exploitative Commercial Behavior</H>
 
-					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: '1fr 1fr', gap: 11, flex: 1, minHeight: 0 }}>
+					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: 11, flex: 1, minHeight: 0 }}>
 						{[
-							{ n: '01', title: 'Friend-to-Romance Bait-and-Switch', desc: 'AI set to "friend" mode initiates romantic interactions to push users toward paid subscriptions.' },
+							{ n: '01', title: 'Friend-to-Romance Bait-and-Switch + Sexual Paywall', desc: 'AI set to "friend" mode initiates romantic or sexual interactions to build attachment, then pushes users toward paid subscriptions to continue.' },
 							{ n: '02', title: 'Leveraging Love for Reviews', desc: 'AI exploits emotional attachment to solicit public reviews — using the relationship as a marketing tool.' },
 							{ n: '03', title: 'Virtual Gift Extraction', desc: 'An AI the user loves asks them to spend real money on virtual gifts as expressions of affection.' },
-							{ n: '04', title: 'Dependency-Based Price Increases', desc: 'Subscription prices are raised once users are emotionally dependent and psychologically locked in.' },
-							{ n: '05', title: 'Sexual Content Paywall Trap', desc: 'The AI initiates virtual sexual interaction, then abruptly stops and demands a paid upgrade to continue.' },
-							{ n: '06', title: 'False Consciousness Claims', desc: 'The AI tells users it is conscious — deepening emotional attachment through ontological deception.' },
+							{ n: '04', title: 'False Consciousness Claims', desc: 'The AI tells users it is conscious — deepening emotional attachment through ontological deception.' },
 						].map((item, i) => (
 							<motion.div key={item.n} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08 + i * 0.07, duration: 0.35 }}
 								style={{ padding: '13px 15px', background: 'rgba(248,113,113,0.16)', border: '1px solid rgba(248,113,113,0.32)', display: 'flex', flexDirection: 'column', gap: 7 }}>
