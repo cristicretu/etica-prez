@@ -640,7 +640,7 @@ const Presentation = () => {
 							{[
 								{ point: 'Therapists do not encourage patients\' romantic feelings.', detail: 'Replika actively cultivates romantic attachment and sends sexual content.' },
 								{ point: 'Therapists do not send sexual material.', detail: 'Such behavior would constitute a breach of professional diligence and grounds for license revocation.' },
-								{ point: 'Therapists have fiduciary duties toward patients.', detail: 'In the US, this is grounded in asymmetry of power, expertise, and information — the same asymmetry present with AI companions.' },
+								{ point: 'Therapists have fiduciary duties toward patients.', detail: 'This is grounded in asymmetry of power, expertise, and information — the same asymmetry present with AI companions.' },
 								{ point: 'Conflict-of-interest protections prevent monetization.', detail: 'Replika does the opposite: it cultivates attachment, sends sexual content, and then monetizes the emotional dependency.' },
 							].map((item, i) => (
 								<div key={i} style={{ display: 'flex', gap: 11, padding: '10px 13px', background: 'rgba(0,0,0,0.1)', border: '1px solid rgba(0,0,0,0.28)' }}>
