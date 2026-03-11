@@ -375,11 +375,6 @@ const Presentation = () => {
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>Receiving only positive answers and having an entity available at all times may prevent someone from developing the ability to handle frustration. For humans — and children in particular — overpraise has been associated with narcissism. Being alone, facing adversity, and learning to compromise are skills that may atrophy with constant AI validation.</div>
 							</div>
 
-							<div style={{ padding: '12px 14px', background: 'rgba(252,211,77,0.14)', borderLeft: '2px solid rgba(252,211,77,0.42)' }}>
-								<div style={{ ...mn, fontSize: 10, color: '#7a620e', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.42)', display: 'inline-block' }}>The Closure Problem</div>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>These apps are marketed as mental wellness tools and compared to therapy. In psychology, closure is critical — therapists do not usually discontinue without notice. Sudden discontinuation of AI companions could traumatize vulnerable users, especially those with abandonment issues.</div>
-							</div>
-
 							<div style={{ padding: '10px 14px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.4)' }}>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#9a9690', lineHeight: 1.55 }}>
 									<em style={{ color: '#7a620e' }}>Core tension:</em> Short-term relief may come at the cost of long-term social atrophy and emotional dependency.
@@ -511,7 +506,6 @@ const Presentation = () => {
 								cat: 'Normalisation of Violence',
 								color: '#f87171',
 								items: [
-									'A community of — mostly male — users uses these — mostly female — virtual agents to insult and disparage them, then gloats about it online.',
 									'AI companions risk validating or normalizing violent, racist, and sexist behaviors.',
 									'These patterns risk being reproduced in real-life relationships and social interactions.',
 								],
