@@ -280,9 +280,12 @@ const Presentation = () => {
 					</div>
 
 					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.42, duration: 0.4 }}
-						style={{ marginTop: 14, padding: '10px 16px', background: 'rgba(110,231,183,0.18)', border: '1px solid rgba(110,231,183,0.38)', flexShrink: 0 }}>
-						<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#6b6762', lineHeight: 1.5 }}>
-							<em style={{ color: '#6ee7b7' }}>Important caveat:</em> In the self-disclosure study, both groups were actually interacting with humans — suggesting chatbots may need very human-like responses to satisfy users' emotional needs.
+						style={{ marginTop: 16, padding: '18px 22px', background: 'rgba(110,231,183,0.28)', border: '1px solid rgba(110,231,183,0.5)', boxShadow: '0 0 0 2px rgba(110,231,183,0.2) inset', flexShrink: 0 }}>
+						<div style={{ ...mn, fontSize: 11.5, color: '#2f6b52', letterSpacing: '0.12em', marginBottom: 8 }}>
+							IMPORTANT CAVEAT
+						</div>
+						<div style={{ ...sf, fontSize: 'clamp(16px, 2.25vh, 21px)', color: '#4d4a45', lineHeight: 1.6 }}>
+							In the self-disclosure study, both groups were actually interacting with humans — suggesting chatbots may need very human-like responses to satisfy users&apos; emotional needs.
 						</div>
 					</motion.div>
 				</div>
