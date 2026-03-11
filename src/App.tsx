@@ -375,7 +375,7 @@ const Presentation = () => {
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ padding: '14px 16px', background: 'rgba(252,211,77,0.16)', borderLeft: '2px solid rgba(252,211,77,0.48)' }}>
 								<div style={{ ...mn, fontSize: 10, color: '#7a620e', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.42)', display: 'inline-block' }}>The Validation Trap · Brummelman et al. (2015)</div>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>Receiving only positive answers and having an entity available at all times may prevent someone from developing the ability to handle frustration. For humans — and children in particular — overpraise has been associated with narcissism. Being alone, facing adversity, and learning to compromise are skills that may atrophy with constant AI validation.</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>Receiving only positive answers and having an entity available at all times may prevent someone from developing the ability to handle frustration. For humans — and children in particular — overpraise has been associated with development of narcissism. Being alone, facing adversity, and learning to compromise are skills that may atrophy with constant AI validation.</div>
 							</div>
 
 							<div style={{ padding: '10px 14px', background: 'rgba(252,211,77,0.2)', border: '1px solid rgba(252,211,77,0.4)' }}>
@@ -625,7 +625,7 @@ const Presentation = () => {
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
 							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#6b6762', textTransform: 'uppercase', marginBottom: 4 }}>The Analogy</div>
 							<div style={{ ...sf, fontSize: 'clamp(13px, 1.85vh, 17px)', color: '#7a7672', lineHeight: 1.68 }}>
-								Kuyda compares users falling in love with their AI to <em style={{ color: '#8a8680' }}>therapeutic transference</em> — the known phenomenon where patients develop feelings for their therapist — framing attachment as natural and inevitable.
+								Kuyda compares users falling in love with their AI to <em style={{ color: '#8a8680' }}>therapeutic transference</em>, framing attachment as natural and inevitable.
 							</div>
 							<div style={{ padding: '13px 15px', background: 'rgba(196,181,253,0.05)', border: '1px solid rgba(196,181,253,0.12)', marginTop: 4 }}>
 								<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', color: '#8a8680', lineHeight: 1.6 }}>
