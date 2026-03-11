@@ -1010,7 +1010,7 @@ const Presentation = () => {
 			</div>
 
 			{/* Slide viewport */}
-			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.02)', transformOrigin: 'center', background: '#fff', border: `3px solid ${accent}88`, boxShadow: `0 0 0 7px ${accent}26` }}>
+			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.08)', transformOrigin: 'center', background: '#fff', border: `3px solid ${accent}88`, boxShadow: `0 0 0 7px ${accent}26` }}>
 				<AnimatePresence initial={false} custom={direction} mode="wait">
 					<motion.div
 						key={currentSlide}
