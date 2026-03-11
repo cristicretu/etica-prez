@@ -426,7 +426,7 @@ const Presentation = () => {
 				<div style={base}>
 					<Ghost>03</Ghost>
 					<SLabel text="03b — Dangerous & Harmful Responses" accent={ACCENT[6]} />
-					<H>At the Mercy of a Corporation</H>
+					<H>Corporate Risks and Responsibilities</H>
 
 					<div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 22, flex: 1, minHeight: 0 }}>
 						<motion.div initial={{ opacity: 0, x: -14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15, duration: 0.4 }}
