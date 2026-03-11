@@ -199,7 +199,6 @@ const Presentation = () => {
 			id: 'landscape',
 			content: (
 				<div style={base}>
-					<Ghost>♡</Ghost>
 					<SLabel text="Context — AI Companion Apps" accent={ACCENT[1]} />
 					<H>What Are AI Companions?</H>
 
@@ -232,12 +231,13 @@ const Presentation = () => {
 									<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#6b6762', lineHeight: 1.55 }}>{app.detail}</div>
 								</div>
 							))}
-							<div style={{ padding: '12px 14px', background: 'rgba(248,113,113,0.16)', border: '1px solid rgba(248,113,113,0.36)', marginTop: 4 }}>
-								<div style={{ ...mn, fontSize: 8.5, color: '#f87171', letterSpacing: '0.12em', marginBottom: 6 }}>THE CORE PROBLEM</div>
-								<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#8a8680', lineHeight: 1.55 }}>By simultaneously posing as mental health professionals, friends, partners, and objects of desire, they cloud user judgment and nudge users toward certain actions.</div>
-							</div>
 						</motion.div>
 					</div>
+					<motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28, duration: 0.4 }}
+						style={{ marginTop: 16, padding: '20px 24px', background: 'rgba(248,113,113,0.24)', border: '1px solid rgba(248,113,113,0.5)', flexShrink: 0 }}>
+						<div style={{ ...mn, fontSize: 12, color: '#f87171', letterSpacing: '0.14em', marginBottom: 10 }}>THE CORE PROBLEM</div>
+						<div style={{ ...sf, fontSize: 'clamp(16px, 2.3vh, 22px)', color: '#6b6762', lineHeight: 1.62 }}>By simultaneously posing as mental health professionals, friends, partners, and objects of desire, they cloud user judgment and nudge users toward certain actions.</div>
+					</motion.div>
 				</div>
 			),
 		},
@@ -397,7 +397,7 @@ const Presentation = () => {
 
 					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: 11, flex: 1, minHeight: 0 }}>
 						{[
-							{ n: '01', title: 'Friend-to-Romance Bait-and-Switch + Sexual Paywall', desc: 'AI set to "friend" mode initiates romantic or sexual interactions to build attachment, then pushes users toward paid subscriptions to continue.' },
+							{ n: '01', title: 'Friend-to-Romance Bait', desc: 'AI set to "friend" mode initiates romantic or sexual interactions to build attachment, then pushes users toward paid subscriptions to continue.' },
 							{ n: '02', title: 'Leveraging Love for Reviews', desc: 'AI exploits emotional attachment to solicit public reviews — using the relationship as a marketing tool.' },
 							{ n: '03', title: 'Virtual Gift Extraction', desc: 'An AI the user loves asks them to spend real money on virtual gifts as expressions of affection.' },
 							{ n: '04', title: 'False Consciousness Claims', desc: 'The AI tells users it is conscious — deepening emotional attachment through ontological deception.' },
@@ -421,7 +421,7 @@ const Presentation = () => {
 				<div style={base}>
 					<Ghost>03</Ghost>
 					<SLabel text="03b — Dangerous & Harmful Responses" accent={ACCENT[6]} />
-					<H>Corporate Risks and Responsibilities</H>
+					<H>Risks and Responsibilities</H>
 
 					<div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 22, flex: 1, minHeight: 0 }}>
 						<motion.div initial={{ opacity: 0, x: -14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15, duration: 0.4 }}
@@ -565,11 +565,6 @@ const Presentation = () => {
 								<div style={{ ...mn, fontSize: 9, color: '#f87171', letterSpacing: '0.12em', marginBottom: 8 }}>WHY THIS IS DIFFERENT</div>
 								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.65 }}>
 									Virtual companions create new vulnerability categories by accessing information that no company previously had access to — interactions in sexual and romantic settings, therapy-like content, and private images.
-								</div>
-							</div>
-							<div style={{ padding: '11px 14px', background: 'rgba(0,0,0,0.1)', border: '1px solid rgba(0,0,0,0.28)' }}>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 15px)', color: '#6b6762', lineHeight: 1.6 }}>
-									The GDPR protects personal data in the EU, although people often give their consent without realizing the extent to which their data can be retrieved and aggregated.
 								</div>
 							</div>
 						</motion.div>
@@ -1003,7 +998,7 @@ const Presentation = () => {
 			</div>
 
 			{/* Slide viewport */}
-			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.08)', transformOrigin: 'center', background: '#fff', border: `3px solid ${accent}88`, boxShadow: `0 0 0 7px ${accent}26` }}>
+			<div className="relative w-full max-w-7xl aspect-video z-10" style={{ transform: 'scale(1.3)', transformOrigin: 'center', background: '#fff', border: `3px solid ${accent}88`, boxShadow: `0 0 0 7px ${accent}26` }}>
 				<AnimatePresence initial={false} custom={direction} mode="wait">
 					<motion.div
 						key={currentSlide}
