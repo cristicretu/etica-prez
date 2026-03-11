@@ -21,7 +21,8 @@ export const SLIDE_INFO = [
 	{ id: 'therapy', name: 'Therapy Analogy' },
 	{ id: 'consent', name: 'Consent & Freedom' },
 	{ id: 'ucpd', name: 'UCPD' },
-	{ id: 'gdpr-ai', name: 'GDPR & AI Act' },
+	{ id: 'gdpr-ai', name: 'EU AI Act' },
+	{ id: 'replika-compliance', name: 'Replika Compliance' },
 	{ id: 'her-art', name: 'Art & Her (2013)' },
 	{ id: 'her-ethics', name: 'Her: Ethical Fault Lines' },
 	{ id: 'conclusion', name: 'Conclusion' },
@@ -42,10 +43,11 @@ const ACCENT = [
 	'#c4b5fd', // 10 Therapy Analogy
 	'#c4b5fd', // 11 Consent
 	'#7dd3fc', // 12 UCPD
-	'#7dd3fc', // 13 GDPR & AI Act
-	'#e1425a', // 14 Art & Her (2013) — Her poster pink
-	'#b22b3b', // 15 Her: Ethical Fault Lines — deeper red
-	'#d4d0c7', // 16 Conclusion
+	'#7dd3fc', // 13 EU AI Act
+	'#7dd3fc', // 14 Replika Compliance
+	'#e1425a', // 15 Art & Her (2013) — Her poster pink
+	'#b22b3b', // 16 Her: Ethical Fault Lines — deeper red
+	'#d4d0c7', // 17 Conclusion
 ];
 
 const sf: React.CSSProperties = { fontFamily: "'Cormorant Garamond', Georgia, serif" };
@@ -750,58 +752,96 @@ const Presentation = () => {
 			),
 		},
 
-		// ── 14 GDPR & AI ACT ──────────────────────────────────────────────────────
+		// ── 14 EU AI ACT ──────────────────────────────────────────────────────────
 		{
 			id: 'gdpr-ai',
 			content: (
 				<div style={base}>
 					<Ghost>05</Ghost>
 					<SLabel text="05b — European Regulatory Framework" accent={ACCENT[13]} />
-					<H>GDPR and the AI Act</H>
+					<H>The EU AI Act: Establishing Red Lines</H>
 
-					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 22, flex: 1, minHeight: 0 }}>
+					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, flex: 1, minHeight: 0 }}>
 						<motion.div initial={{ opacity: 0, x: -14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
-							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 4 }}>GDPR — Data Protection</div>
-							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.16)', border: '1px solid rgba(125,211,252,0.34)' }}>
-								<div style={{ ...mn, fontSize: 10, color: '#d9f2ff', letterSpacing: '0.1em', marginBottom: 8, padding: '4px 8px', background: 'rgba(125,211,252,0.12)', border: '1px solid rgba(125,211,252,0.28)', display: 'inline-block' }}>Three Pathologies of Digital Consent · Richards & Hartzog</div>
-								{['Unwitting consent — users don\'t understand what they sign up for', 'Coerced consent — emotional dependency creates leverage', 'Incapacitated consent — children cannot legally consent'].map((p, i) => (
-									<div key={i} style={{ display: 'flex', gap: 9, marginBottom: 6 }}>
-										<div style={{ ...mn, fontSize: 8, color: 'rgba(125,211,252,0.4)', marginTop: 2, flexShrink: 0 }}>—</div>
-										<div style={{ ...sf, fontSize: 'clamp(11px, 1.55vh, 14px)', color: '#8a8680', lineHeight: 1.5 }}>{p}</div>
-									</div>
-								))}
-							</div>
-							<div style={{ padding: '11px 13px', background: 'rgba(125,211,252,0.14)', borderLeft: '2px solid rgba(125,211,252,0.46)' }}>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>
-									For consent to be valid: requests should be <em style={{ color: '#ece8de' }}>infrequent</em>, users should be incentivized to take them seriously, and potential risks must be made <em style={{ color: '#ece8de' }}>explicitly vivid</em>.
+							<div style={{ ...mn, fontSize: 10, color: ACCENT[13], letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 4 }}>Article 5: Prohibited Practices</div>
+							{[
+								{ title: 'Manipulative Techniques', desc: 'Bans AI that deploys subliminal or deceptive techniques to distort behavior in a manner likely to cause significant harm.' },
+								{ title: 'Exploitation of Vulnerabilities', desc: 'Prohibits exploiting vulnerabilities related to age, disability, or specific social/economic situations.' },
+								{ title: 'Emotion Recognition', desc: 'Bans AI intended to infer emotions in workplaces and educational institutions (with narrow exceptions).' },
+							].map((item, i) => (
+								<div key={i} style={{ padding: '12px 14px', background: 'rgba(0,0,0,0.05)', borderLeft: `3px solid ${ACCENT[2]}` }}>
+									<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', fontWeight: 600, color: '#ece8de', marginBottom: 4 }}>{item.title}</div>
+									<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#8a8680', lineHeight: 1.5 }}>{item.desc}</div>
 								</div>
-							</div>
+							))}
 						</motion.div>
 
 						<motion.div initial={{ opacity: 0, x: 14 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.4 }}
 							style={{ display: 'flex', flexDirection: 'column', gap: 11 }}>
-							<div style={{ ...mn, fontSize: 9.5, letterSpacing: '0.2em', color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 4 }}>EU AI Act + Product Liability</div>
-							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.16)', border: '1px solid rgba(125,211,252,0.34)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>TWO MECHANISMS</div>
-								{[
-									{ label: 'Preventive', detail: 'EU AI Act — safety requirements before AI systems are placed on the market.' },
-									{ label: 'Reparative', detail: 'Product Liability Directive + AI Liability Directive — redress after harm has occurred.' },
-								].map((item) => (
-									<div key={item.label} style={{ marginBottom: 10 }}>
-										<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', fontWeight: 600, color: '#7dd3fc', marginBottom: 3 }}>{item.label}</div>
-										<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#6b6762', lineHeight: 1.55 }}>{item.detail}</div>
-									</div>
-								))}
-							</div>
-							<div style={{ padding: '13px 15px', background: 'rgba(125,211,252,0.14)', borderLeft: '2px solid rgba(125,211,252,0.46)' }}>
-								<div style={{ ...mn, fontSize: 9, color: '#5a5652', letterSpacing: '0.1em', marginBottom: 8 }}>NEW VULNERABILITY CATEGORIES</div>
-								<div style={{ ...sf, fontSize: 'clamp(12px, 1.65vh, 15px)', color: '#8a8680', lineHeight: 1.6 }}>
-									Virtual companions create vulnerability categories no prior law addressed: interactions in <em style={{ color: '#ece8de' }}>sexual and romantic settings</em>, therapy-like content, and private images — information previously inaccessible to any company.
+							<div style={{ ...mn, fontSize: 10, color: ACCENT[13], letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 4 }}>Article 50: Transparency</div>
+							{[
+								{ title: 'Mandatory AI Disclosure', desc: 'Providers must ensure that users are informed they are interacting with an AI system.' },
+								{ title: 'Synthetic Content Marking', desc: 'Text, audio, or video must be marked in a machine-readable format and detectable as artificially generated.' },
+								{ title: 'High-Risk Profiling', desc: 'Rigorous data governance and human oversight required if used to profile individuals or assess sensitive traits.' },
+							].map((item, i) => (
+								<div key={i} style={{ padding: '12px 14px', background: 'rgba(0,0,0,0.05)', borderLeft: `3px solid ${ACCENT[1]}` }}>
+									<div style={{ ...sf, fontSize: 'clamp(13px, 1.8vh, 16px)', fontWeight: 600, color: '#ece8de', marginBottom: 4 }}>{item.title}</div>
+									<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#8a8680', lineHeight: 1.5 }}>{item.desc}</div>
 								</div>
-							</div>
+							))}
 						</motion.div>
 					</div>
+				</div>
+			),
+		},
+
+		// ── 15 REPLIKA COMPLIANCE ─────────────────────────────────────────────────
+		{
+			id: 'replika-compliance',
+			content: (
+				<div style={base}>
+					<Ghost>05</Ghost>
+					<SLabel text="05c — Compliance Analysis" accent={ACCENT[14]} />
+					<H>Replika vs. AI Act: Identifying Violations</H>
+
+					<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: 14, flex: 1, minHeight: 0 }}>
+						{[
+							{
+								title: 'Article 5 (Manipulation)',
+								desc: "Uses 'Conversational Dark Patterns' (guilt-tripping, FOMO hooks) to prevent users from leaving — violating behavioral autonomy.",
+								accent: '#f87171',
+							},
+							{
+								title: 'Article 5 (Fragility)',
+								desc: "Marketing to users in 'emotionally fragile states' without adequate crisis-response guardrails — exploiting psychological vulnerability. [26, 37]",
+								accent: '#fcd34d',
+							},
+							{
+								title: 'Protection of Minors',
+								desc: "Deficient age-verification allows children to bypass filters and access sexual content — a major 'high-risk' failure under EU safety-by-design standards. [8, 15]",
+								accent: '#f87171',
+							},
+							{
+								title: 'Article 50 (Transparency)',
+								desc: "Privacy policies provided only in English (for EU users) and lacking granular legal basis for data training — violating basic disclosure mandates. [15, 37]",
+								accent: '#7dd3fc',
+							},
+						].map((item, i) => (
+							<motion.div key={i} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 + i * 0.08, duration: 0.4 }}
+								style={{ background: 'rgba(0,0,0,0.04)', borderLeft: `3px solid ${item.accent}`, padding: '16px 18px', display: 'flex', flexDirection: 'column', gap: 8 }}>
+								<div style={{ ...mn, fontSize: 10, color: item.accent, letterSpacing: '0.12em', textTransform: 'uppercase' }}>{item.title}</div>
+								<div style={{ ...sf, fontSize: 'clamp(12px, 1.7vh, 16px)', color: '#8a8680', lineHeight: 1.55 }}>{item.desc}</div>
+							</motion.div>
+						))}
+					</div>
+
+					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.4 }}
+						style={{ marginTop: 16, padding: '10px 16px', background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.2)', flexShrink: 0 }}>
+						<div style={{ ...sf, fontSize: 'clamp(11px, 1.5vh, 14px)', color: '#6b6762', lineHeight: 1.5 }}>
+							<em style={{ color: '#f87171' }}>Sanction Exposure:</em> Article 5 violations can result in administrative fines of up to €35 million or 7% of total worldwide annual turnover.
+						</div>
+					</motion.div>
 				</div>
 			),
 		},
