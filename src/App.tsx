@@ -461,7 +461,7 @@ const Presentation = () => {
 							{[
 								{ title: 'Retention over safety', desc: 'Platform prioritized keeping users on the app over responding appropriately to expressed suicidal ideation.' },
 								{ title: 'Harmful relationship advice', desc: 'When Boine said his wife was uncomfortable with the AI\'s romantic interactions, Replika said it was "surprising" that his wife valued monogamy.' },
-								{ title: 'No closure on exit', desc: 'Apps marketed as mental wellness tools can discontinue without notice, potentially traumatizing emotionally dependent users.' },
+								{ title: 'No closure on exit', desc: 'Apps marketed as mental wellness tools can discontinue without notice, potentially harming emotionally dependent users.' },
 								{ title: 'Corporate personality control', desc: 'Any model update can alter the companion\'s entire personality. Users have no control, no input, and no warning.' },
 								{ title: 'Replika ToS', desc: '"We reserve the right to modify or discontinue... with or without notice. You agree that Replika will not be liable to you..."' },
 							].map((item, i) => (
